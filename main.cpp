@@ -4,9 +4,6 @@
 #include "normalization.h"
 
 int main() {
-    // -------------------------------------------------------------------
-    // Step 1 & 2 — Load and clean the data
-    // -------------------------------------------------------------------
     std::vector<Song> original_dataset;
     std::vector<std::vector<double>> math_matrix;
 
@@ -20,9 +17,6 @@ int main() {
               << " by " << original_dataset[0].artist_name << "\n";
     std::cout << "Features per song (raw): " << math_matrix[0].size() << "\n";
 
-    // -------------------------------------------------------------------
-    // Step 3 — Normalize math_matrix
-    // -------------------------------------------------------------------
     try {
         normalizeMatrix(math_matrix);
     } catch (const std::exception& e) {
@@ -39,10 +33,6 @@ int main() {
     for (size_t i = 0; i < feature_names.size(); ++i) {
         std::cout << "  " << feature_names[i] << ": " << math_matrix[0][i] << "\n";
     }
-
-    // -------------------------------------------------------------------
-    // Step 4 — Clustering (coming next)
-    // -------------------------------------------------------------------
 
     return 0;
 }

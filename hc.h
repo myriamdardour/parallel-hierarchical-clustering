@@ -55,5 +55,5 @@ inline double lance_williams(double d_ik, double d_jk, Linkage linkage) {
 std::vector<Merge> naive_hac(const std::vector<Point>& points, Linkage linkage);
 
 // std::vector<Merge> ptrad_hac(const std::vector<Point>& points, Linkage linkage, int num_threads);
-// std::vector<Merge> seq_pop_hac(const std::vector<Point>& points, Linkage linkage, int c, double delta);
+std::vector<Merge> seq_pop_hac(const std::vector<Point>& points, Linkage linkage, int c, double delta);
 // std::vector<Merge> ppop_hac(const std::vector<Point>& points, Linkage linkage, int c, double delta, int num_threads);
